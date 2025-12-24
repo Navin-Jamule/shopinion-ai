@@ -88,7 +88,7 @@ cd shopinion-ai-backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-### 2️⃣ Setup Frontend (This Repo)
+### 2️⃣ Setup Frontend
 
 ```bash
 git clone https://github.com/Navin-Jamule/shopinion-ai.git

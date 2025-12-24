@@ -89,3 +89,29 @@ git clone https://github.com/Navin-Jamule/shopinion-ai-backend.git
 cd shopinion-ai-backend
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
+### 2️⃣ Setup Frontend (This Repo)
+
+```bash
+git clone https://github.com/Navin-Jamule/shopinion-ai.git
+cd shopinion-ai
+npm install
+```
+## 📊 Example Scoring Logic
+
+**User Review:**
+> "The screen is amazing but the battery life is terrible."
+
+| Feature       | Sentiment | Score |
+|--------------|----------|-------|
+| Screen       | Positive | +1    |
+| Battery Life | Negative | -1    |
+
+```
+## 🔗 Repository Links
+
+- **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai  
+- **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend  
+```
+
+

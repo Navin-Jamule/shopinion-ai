@@ -1,4 +1,4 @@
-# 🛒 Shopinion AI 
+# Shopinion AI 
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -9,7 +9,7 @@
 
 ---
 
-## 🏗️ System Architecture & Workflow
+##  System Architecture & Workflow
 
 The project consists of a modern React frontend and a powerful Python-based processing engine.
 
@@ -32,33 +32,33 @@ graph TD
     API -->|JSON Response| React
     React -->|UI Update| User
 ```
-## 🚀 Key Features
+## Key Features
 
-### 🔗 URL-to-Insight
+###  URL-to-Insight
 Paste an e-commerce product URL to trigger deep sentiment analysis across user reviews.
 
-### 🧠 Dual Transformer Pipeline
+###  Dual Transformer Pipeline
 - **RoBERTa** – High-accuracy sentiment classification (Positive / Negative / Neutral)
 - **DeBERTa** – Superior understanding of complex context and sentence structure
 
-### 🧩 Aspect-Based Sentiment Analysis (ABSA)
+###  Aspect-Based Sentiment Analysis (ABSA)
 Identifies sentiment for specific product aspects such as:
 - Battery Life
 - Screen Quality
 - Build Quality
 
-### 📊 Intelligent Scoring Logic
+### Intelligent Scoring Logic
 - Positive mention → **+1**
 - Negative mention → **-1**
 
 Scores are aggregated across hundreds of reviews to surface top **strengths and weaknesses**.
 
-### 🌐 Dynamic Web Scraping
+###  Dynamic Web Scraping
 Uses **Selenium** to handle dynamic content and fetch the latest reviews in real time.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **Framework:** React.js  
@@ -74,9 +74,9 @@ Uses **Selenium** to handle dynamic content and fetch the latest reviews in real
 
 ---
 
-## 🚀 Installation & Local Setup
+##  Installation & Local Setup
 
-### 1️⃣ Setup Backend
+### 1️ Setup Backend
 The backend acts as the AI engine.
 
 **Backend Repository:**  
@@ -88,14 +88,14 @@ cd shopinion-ai-backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-### 2️⃣ Setup Frontend
+### 2️ Setup Frontend
 
 ```bash
 git clone https://github.com/Navin-Jamule/shopinion-ai.git
 cd shopinion-ai
 npm install
 ```
-## 📊 Example Scoring Logic
+##  Example Scoring Logic
 
 **User Review:**
 > "The screen is amazing but the battery life is terrible."
@@ -105,7 +105,7 @@ npm install
 | Screen       | Positive | +1    |
 | Battery Life | Negative | -1    |
 
-## 🔗 Repository Links
+##  Repository Links
 
 - **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai
 - **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend

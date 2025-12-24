@@ -31,9 +31,9 @@ graph TD
     Top5 --> API
     API -->|JSON Response| React
     React -->|UI Update| User
-
-🔥 Key FeaturesURL-to-Insight: Simply paste an e-commerce link to trigger a deep analysis of user sentiment.Dual Transformer Pipeline:RoBERTa: Optimized for high-accuracy sentiment detection (Positive/Negative/Neutral).DeBERTa: Utilized for its superior understanding of complex sentence structures and context.Aspect-Based Sentiment Analysis (ABSA): The system doesn't just look at stars; it identifies specific features (e.g., "Battery Life", "Screen Quality", "Build").Intelligent Scoring Logic:Positive mention of a feature = +1Negative mention of a feature = -1The system aggregates these scores across hundreds of reviews to find the most mentioned strengths and weaknesses.Dynamic Scraping: Uses Selenium to handle dynamic web content and extract the latest reviews.🛠️ Tech StackFrontend (This Repository)Framework: React.jsStyling: Tailwind CSSIcons: Lucide ReactHTTP Client: AxiosBackend (Shopinion-AI-Backend)Language: Python 3.9+Framework: FastAPIScraping: Selenium WebDriverAI Models: Hugging Face Transformers (cardiffnlp/twitter-roberta-base-sentiment, microsoft/deberta-v3-base)🚀 Installation & Local Setup1. Setup the BackendThe backend serves as the AI engine.Backend Repo: https://github.com/Navin-Jamule/shopinion-ai-backendBash# Clone the backend repository
-git clone [https://github.com/Navin-Jamule/shopinion-ai-backend.git](https://github.com/Navin-Jamule/shopinion-ai-backend.git)
+```
+🔥 Key FeaturesURL-to-Insight: Simply paste an e-commerce link to trigger a deep analysis of user sentiment.Dual Transformer Pipeline:RoBERTa: Optimized for high-accuracy sentiment detection.DeBERTa: Utilized for superior understanding of complex context and aspect extraction.Aspect-Based Sentiment Analysis (ABSA): Identifies specific features like "Battery Life" or "Screen Quality" rather than just overall ratings.Intelligent Scoring Logic:Positive mention = +1Negative mention = -1Features are ranked by their cumulative score to find the most significant strengths and weaknesses.Dynamic Scraping: Uses Selenium to handle dynamic web content and extract reviews reliably.🛠️ Tech StackFrontend (This Repository)Framework: React.jsStyling: Tailwind CSSIcons: Lucide ReactHTTP Client: AxiosBackend (Shopinion-AI-Backend)Language: Python 3.9+Framework: FastAPIScraping: Selenium WebDriverAI Models: Hugging Face Transformers (roberta-base-sentiment, deberta-v3-base)🚀 Installation & Local Setup1. Setup the BackendThe backend serves as the AI engine.Backend Repo: Shopinion AI BackendBash# Clone the backend repository
+git clone https://github.com/Navin-Jamule/shopinion-ai-backend.git
 cd shopinion-ai-backend
 
 # Install required Python packages
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 # Start the FastAPI server
 uvicorn main:app --reload
 2. Setup the Frontend (This Repo)Bash# Clone this repository
-git clone [https://github.com/Navin-Jamule/shopinion-ai.git](https://github.com/Navin-Jamule/shopinion-ai.git)
+git clone https://github.com/Navin-Jamule/shopinion-ai.git
 cd shopinion-ai
 
 # Install dependencies
@@ -53,6 +53,4 @@ echo "VITE_API_URL=http://localhost:8000" > .env
 
 # Start the development server
 npm run dev
-📊 Example LogicIf a user submits a review: "The screen is amazing but the battery life is terrible."FeatureSentimentScoreScreenPositive+1Battery LifeNegative-1After analyzing 100 reviews, the system ranks the features by their total score and returns the Top 5 in each category to the React UI.🔗 LinksFrontend Repository: shopinion-aiBackend Repository: shopinion-ai-backend
-
-
+📊 Example LogicIf a user submits a review: "The screen is amazing but the battery life is terrible."FeatureSentimentScoreScreenPositive+1Battery LifeNegative-1After analyzing all reviews, the system ranks the features and returns the Top 5 in each category to the React UI.🔗 LinksFrontend Repository: shopinion-aiBackend Repository: shopinion-ai-backendDeveloped by Navin Jamule 🚀 

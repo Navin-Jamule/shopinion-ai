@@ -43,9 +43,9 @@ Paste an e-commerce product URL to trigger deep sentiment analysis across user r
 
 ###  Aspect-Based Sentiment Analysis (ABSA)
 Identifies sentiment for specific product aspects such as:
-    - Battery Life
-    - Screen Quality
-    - Build Quality
+- Battery Life
+- Screen Quality
+- Build Quality
 
 ### Intelligent Scoring Logic
 - Positive mention → **+1**

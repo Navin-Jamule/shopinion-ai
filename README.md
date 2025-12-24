@@ -70,9 +70,7 @@ Uses **Selenium** to handle dynamic content and fetch the latest reviews in real
 - **Language:** Python 3.9+  
 - **Framework:** FastAPI  
 - **Scraping:** Selenium WebDriver  
-- **AI Models:** Hugging Face Transformers  
-  - `cardiffnlp/twitter-roberta-base-sentiment`
-  - `microsoft/deberta-v3-base`
+- **AI Models:** Hugging Face Transformers(roberta/deberta)
 
 ---
 
@@ -110,8 +108,8 @@ npm install
 ```
 ## 🔗 Repository Links
 
-- **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai  
-- **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend  
-```
+- **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai
+- **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend
+
 
 

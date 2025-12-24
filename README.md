@@ -32,84 +32,60 @@ graph TD
     API -->|JSON Response| React
     React -->|UI Update| User
 ```
-🔥 Key Features
-URL-to-Insight: Simply paste an e-commerce link to trigger a deep analysis of user sentiment.
+## 🚀 Key Features
 
-Dual Transformer Pipeline:
+### 🔗 URL-to-Insight
+Paste an e-commerce product URL to trigger deep sentiment analysis across user reviews.
 
-    RoBERTa: Optimized for high-accuracy sentiment detection (Positive/Negative/Neutral).
+### 🧠 Dual Transformer Pipeline
+- **RoBERTa** – High-accuracy sentiment classification (Positive / Negative / Neutral)
+- **DeBERTa** – Superior understanding of complex context and sentence structure
 
-    DeBERTa: Utilized for its superior understanding of complex sentence structures and context.
+### 🧩 Aspect-Based Sentiment Analysis (ABSA)
+Identifies sentiment for specific product aspects such as:
+- Battery Life
+- Screen Quality
+- Build Quality
 
-Aspect-Based Sentiment Analysis (ABSA): The system doesn't just look at stars; it identifies specific features (e.g., "Battery Life", "Screen Quality", "Build").
+### 📊 Intelligent Scoring Logic
+- Positive mention → **+1**
+- Negative mention → **-1**
 
-Intelligent Scoring Logic:
+Scores are aggregated across hundreds of reviews to surface top **strengths and weaknesses**.
 
-    Positive mention of a feature = +1
+### 🌐 Dynamic Web Scraping
+Uses **Selenium** to handle dynamic content and fetch the latest reviews in real time.
 
-    Negative mention of a feature = -1
+---
 
-    The system aggregates these scores across hundreds of reviews to find the most mentioned strengths and weaknesses.
+## 🛠️ Tech Stack
 
-Dynamic Scraping: Uses Selenium to handle dynamic web content and extract the latest reviews.
+### Frontend (This Repository)
+- **Framework:** React.js  
+- **Styling:** Tailwind CSS  
+- **Icons:** Lucide React  
+- **HTTP Client:** Axios  
 
-🛠️ Tech Stack
-Frontend (This Repository)
-    Framework: React.js
+### Backend (Shopinion-AI-Backend)
+- **Language:** Python 3.9+  
+- **Framework:** FastAPI  
+- **Scraping:** Selenium WebDriver  
+- **AI Models:** Hugging Face Transformers  
+  - `cardiffnlp/twitter-roberta-base-sentiment`
+  - `microsoft/deberta-v3-base`
 
-    Styling: Tailwind CSS
+---
 
-    Icons: Lucide React
+## 🚀 Installation & Local Setup
 
-    HTTP Client: Axios
+### 1️⃣ Setup Backend
+The backend acts as the AI engine.
 
-Backend (Shopinion-AI-Backend)
-    Language: Python 3.9+
+**Backend Repository:**  
+https://github.com/Navin-Jamule/shopinion-ai-backend
 
-    Framework: FastAPI
-
-    Scraping: Selenium WebDriver
-
-    AI Models: Hugging Face Transformers (cardiffnlp/twitter-roberta-base-sentiment, microsoft/deberta-v3-base)
-
-🚀 Installation & Local Setup
-1. Setup the Backend
-    The backend serves as the AI engine. Backend Repo: https://github.com/Navin-Jamule/shopinion-ai-backend
-   # Clone the backend repository
-    git clone [https://github.com/Navin-Jamule/shopinion-ai-backend.git](https://github.com/Navin-Jamule/shopinion-ai-backend.git)
-    cd shopinion-ai-backend
-    
-    # Install required Python packages
-    pip install -r requirements.txt
-    
-    # Start the FastAPI server
-    uvicorn main:app --reload
-
-2. Setup the Frontend (This Repo)
-
-    # Clone this repository
-    git clone [https://github.com/Navin-Jamule/shopinion-ai.git](https://github.com/Navin-Jamule/shopinion-ai.git)
-    cd shopinion-ai
-    
-    # Install dependencies
-    npm install
-    
-    # Create a .env file and point it to your backend
-    echo "VITE_API_URL=http://localhost:8000" > .env
-    
-    # Start the development server
-    npm run dev
-
-📊 Example Logic
-    If a user submits a review: "The screen is amazing but the battery life is terrible."
-    Feature    Sentiment Score
-    Screen     Positive   +1
-    Battery    Negative  -1
-    Life 
-
-🔗 Links
-    Frontend Repository: [shopinion-ai](https://github.com/Navin-Jamule/shopinion-ai)
-
-    Backend Repository: [shopinion-ai-backend](https://github.com/Navin-Jamule/shopinion-ai-backend)
-
-Developed by Navin Jamule 
+```bash
+git clone https://github.com/Navin-Jamule/shopinion-ai-backend.git
+cd shopinion-ai-backend
+pip install -r requirements.txt
+uvicorn main:app --reload

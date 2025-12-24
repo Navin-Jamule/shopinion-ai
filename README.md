@@ -105,7 +105,6 @@ npm install
 | Screen       | Positive | +1    |
 | Battery Life | Negative | -1    |
 
-```
 ## 🔗 Repository Links
 
 - **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai

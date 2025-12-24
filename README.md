@@ -35,26 +35,26 @@ graph TD
 ## Key Features
 
 ###  URL-to-Insight
-    Paste an e-commerce product URL to trigger deep sentiment analysis across user reviews.
+Paste an e-commerce product URL to trigger deep sentiment analysis across user reviews.
 
 ###  Dual Transformer Pipeline
-    - **RoBERTa** – High-accuracy sentiment classification (Positive / Negative / Neutral)
-    - **DeBERTa** – Superior understanding of complex context and sentence structure
+- **RoBERTa** – High-accuracy sentiment classification (Positive / Negative / Neutral)
+- **DeBERTa** – Superior understanding of complex context and sentence structure
 
 ###  Aspect-Based Sentiment Analysis (ABSA)
-    Identifies sentiment for specific product aspects such as:
+Identifies sentiment for specific product aspects such as:
     - Battery Life
     - Screen Quality
     - Build Quality
 
 ### Intelligent Scoring Logic
-    - Positive mention → **+1**
-    - Negative mention → **-1**
+- Positive mention → **+1**
+- Negative mention → **-1**
 
-    Scores are aggregated across hundreds of reviews to surface top **strengths and weaknesses**.
+ Scores are aggregated across hundreds of reviews to surface top **strengths and weaknesses**.
 
 ###  Dynamic Web Scraping
-    Uses **Selenium** to handle dynamic content and fetch the latest reviews in real time.
+Uses **Selenium** to handle dynamic content and fetch the latest reviews in real time.
 
 ---
 
@@ -77,38 +77,38 @@ graph TD
 ##  Installation & Local Setup
 
 ### 1️ Setup Backend
-    The backend acts as the AI engine.
+The backend acts as the AI engine.
     
-    **Backend Repository:**  
-    https://github.com/Navin-Jamule/shopinion-ai-backend
+**Backend Repository:**  
+https://github.com/Navin-Jamule/shopinion-ai-backend
     
-    ```bash
-    git clone https://github.com/Navin-Jamule/shopinion-ai-backend.git
-    cd shopinion-ai-backend
-    pip install -r requirements.txt
-    uvicorn main:app --reload
-    ```
+```bash
+git clone https://github.com/Navin-Jamule/shopinion-ai-backend.git
+cd shopinion-ai-backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 ### 2️ Setup Frontend
 
-    ```bash
-    git clone https://github.com/Navin-Jamule/shopinion-ai.git
-    cd shopinion-ai
-    npm install
-    ```
+```bash
+git clone https://github.com/Navin-Jamule/shopinion-ai.git
+cd shopinion-ai
+npm install
+```
 ##  Example Scoring Logic
 
-    **User Review:**
-    > "The screen is amazing but the battery life is terrible."
+**User Review:**
+> "The screen is amazing but the battery life is terrible."
     
-    | Feature       | Sentiment | Score |
-    |--------------|----------|-------|
-    | Screen       | Positive | +1    |
-    | Battery Life | Negative | -1    |
+| Feature      | Sentiment| Score|
+|--------------|----------|-------|
+| Screen       | Positive | +1    |
+| Battery Life | Negative | -1    |
 
 ##  Repository Links
 
-    - **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai
-    - **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend
+- **Frontend Repository:** https://github.com/Navin-Jamule/shopinion-ai
+- **Backend Repository:** https://github.com/Navin-Jamule/shopinion-ai-backend
 
 
 

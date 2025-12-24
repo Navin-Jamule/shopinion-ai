@@ -60,7 +60,7 @@ Uses **Selenium** to handle dynamic content and fetch the latest reviews in real
 
 ## 🛠️ Tech Stack
 
-### Frontend (This Repository)
+### Frontend
 - **Framework:** React.js  
 - **Styling:** Tailwind CSS  
 - **Icons:** Lucide React  
